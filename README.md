@@ -1,2 +1,2 @@
 # Zygor
-Zygor for wowcircle x1
+Зигор русская версия для wowcircle x1
