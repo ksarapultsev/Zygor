@@ -519,7 +519,9 @@ goto 34.8,47.1
 ..accept Ловля крыс##416
 ..accept Задание Грозовой Вершины##1339
 step //121
-home Телсамар
+goto 35.54,48.40
+.talk Innkeeper Hearthstove##6734
+home Телсамарw
 step //122
 goto 34.8,49.3
 .talk Vidra Hearthstove##1963
@@ -5269,8 +5271,15 @@ step //123
 goto 56.3,47.5
 .talk Gryan Stoutmantle##234
 ..turnin Народное ополчение##14
+step //123_1
+'Летите в Стальгорн|goto Ironforge|noway|c
+step //123_2
+goto Ironforge,69.6,50.6|n
+.talk Gnoarn##6569
+..accept Find Bingles##2039
 step //124
-'Летите в Телсамар|goto Loch Modan,33.9,50.8,0.5|noway|c
+'Летите в Телсамар|goto Loch Modan,33.9,50.8|noway|c
+//goto 34.7,43.2
 step //125
 home Телсамар
 step //126
@@ -11230,7 +11239,7 @@ step //2
 'Идите на север в Зимние ключи через туннель|goto Winterspring|noway|c
 step //3
 'За туннелем справа 27.7,34.5|goto Winterspring,27.7,34.5
-.talk Salfa##11556
+.talk Salfa##
 ..accept Боевые действия в деревне Зимней Спячки##8464
 step //4
 goto 31.3,45.2
@@ -12853,6 +12862,16 @@ goto Zangarmarsh,80.4,64.2
 ..accept Растения Зангартопи##9802
 .talk Ikeyen##17956
 ..accept Племя Тенетопи##9747
+///////////////////////////////////
+step //26-1
+goto 78.1,62
+.talk Ysiel Windsinger##17841 
+..accept Страж Хомуут##9778
+step //26-2
+goto 79.1,65.3
+.talk Warden Hamoot##17858
+..turnin Страж Хомуут##9778
+//////////////////////////////////
 step //26
 goto 79.1,65.3
 .talk Warden Hamoot##17858
