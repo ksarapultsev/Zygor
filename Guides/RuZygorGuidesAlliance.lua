@@ -212,6 +212,7 @@ step //47
 goto 42.1,67.3
 .talk Remy "Two Times"##241
 ..turnin Золотая пыль##47
+// тут изменения дальше "Auntie" Bernice Stonefield##246
 step //48
 ding 6
 step //49
@@ -224,7 +225,6 @@ goto 43.3,65.7
 .talk William Pestle##253
 ..turnin Свечи кобольдов##60
 ..accept Посылка в Штормград##61
-step //51
 goto 34.5,84.2
 .talk "Auntie" Bernice Stonefield##246
 ..accept Потерянное ожерелье##85
@@ -283,6 +283,12 @@ goto 42.1,65.9
 .talk Marshal Dughan##240
 ..turnin Водяная нечисть##40
 ..accept Новые заботы##35
+
+step 
+goto 41.53,65.87
+.talk Corina Steele##54
+buy Gladius##2488 
+
 step //65
 goto 43.3,65.7
 .talk William Pestle##253
@@ -315,8 +321,12 @@ step //71
 goto 79.5,68.8
 .talk Sara Timberlain##278
 ..accept Красный лен##83
+step
+goto Redridge Mountains,30.6,59.6
+talk Ariena Stormfeather##931
+.fpath Красногорье
 step //72
-goto 81.4,66.1
+goto Elwynn Forest,81.4,66.1
 .talk Supervisor Raelen##10616
 ..accept Тридцать три несчастья##5545
 step //73
@@ -13409,10 +13419,6 @@ step //23
 'Пока вы следуете за слугой Кадгара, подойдите к 64.0,15.5||goto 64.0,15.5
 .talk Seth##18653
 ..accept Без рыбалки##10037
-step //24
-'Пока вы следуете за слугой Кадгара, подойдите к 52.6,21.0|goto 52.6,21.0
-.talk Rilak the Redeemed##22292
-..accept Глаза Скеттиса##10847
 step //25
 'Идите за за слугой Кадгара пока экскурсия не закончится|goal City of Light|q 10211/1
 step //26
@@ -13483,6 +13489,14 @@ goto 47.1,27
 .talk Empoor##18482
 ..turnin Любыми средствами##9978
 ..accept Латрай Торговец Ветром##9979
+step 
+goto Terokkar Forest,37.6,51.4
+.talk Kirrik the Awakened##22272
+..accept Speak with Rilak the Redeemed##10908
+step 
+goto Shattrath City,52.6,20.8
+.talk Rilak the Redeemed##22292
+..accept Глаза Скеттиса##10847
 step //43
 goto 49.2,20.3
 .' Нажмите на Восточный алтарь
@@ -16134,7 +16148,7 @@ goto 47.1,75.5
 step //72
 goto 57,44.3
 .talk Arch Druid Lathorius##25809
-..accept Вступление##1186411864|instant
+..accept Вступление##11864|instant
 ..accept Уши мертвых врагов##11866
 ..accept Помоги тем, кто не может помочь себе сам##11876
 step //73
