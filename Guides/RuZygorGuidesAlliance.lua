@@ -18778,6 +18778,7 @@ goto 31.2,59.7
 .talk Woodlands Walker##26421
 .collect 3 Bark of the Walkers##36786|q 12092
 .' Используйте Кору древня на древа Лоталора|use Bark of the Walkers##36786|tip Неагрессивные древа.
+step
 .' Усилено 3 древа Лоталора|goal 3 Lothalor Ancient strengthened|q 12092/1
 step //310
 goto 28.7,57.1
