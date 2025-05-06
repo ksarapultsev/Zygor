@@ -18461,10 +18461,16 @@ goto 28.9,44
 .talk Father Levariol##24038
 ..turnin О ключах и клетках##11231
 ..accept На службе Света##11239
-step //242
+step //
 goto 28.9,44.2
 .talk Mage-Lieutenant Malister##23888
-..accept Спящие великаны##11432
+..accept Ледяной змей и его повелитель##11238
+step
+goto 36.6,7.4
+.kill wyrmcaller-vile##24029|q 11238/1
+.collect  1 Рог призывателя змея##33282|q 11238/1
+.'Нажмите на "Рог призывателя змея в сумке" |use Рог призывателя змея##33282
+.kill Убейте Ледиона##24019|q 11238/1
 step //243
 'Поднимитесь на платформу 35.7,15.8|goto 35.7,15.8
 .kill 10 Deathless Watcher|q 11239/1
@@ -18488,25 +18494,37 @@ step //247
 step //248
 'Спуститесь вниз по лестнице 35,11.9|goto 35,11.9
 .kill 4 Fearsome Horror|q 11239/2|tip Под землей в Чертогах Пробуждения.
-.kill Некролордов|n
-.collect 5 Awakening Rod##34083|n
-.' Используйте Жезл пробуждения на спящего врайкула|use Awakening Rod##34083|tip Они спят прямо в стенах, как мумии.
-.kill 5 Dormant Vrykul|q 11432/1
 step //249
 'Вернитесь в Крепость Западной Стражи|goto Howling Fjord,30.9,41.5,0.5|use Hearthstone##6948|noway|c
-step //250
+step
+goto 28.9,44.2
 'Зайдите в форт 28.9,44.2|goto 28.9,44.2
 .talk Mage-Lieutenant Malister##23888
-..turnin Спящие великаны##11432
+..turnin Ледяной змей и его повелитель##11238
+step //252
+goto 28.9,44
+.talk Father Levariol##24038
+..turnin На службе Света##11239
 step //251
 goto 28.8,44.1
 .talk Captain Adams##23749
 ..turnin Некро-владыка Мезхен##11236
 ..turnin Спящий король##11452
-step //252
-goto 28.9,44
-.talk Father Levariol##24038
-..turnin На службе Света##11239
+step //242
+goto 28.9,44.2
+.talk Mage-Lieutenant Malister##23888
+..accept Спящие великаны##11432
+step 
+goto 34.5,13.2,0.3
+.' Вход вниз в Чертоги Пробуждения начинается тут|goto 34.5,13.2,0.3|noway|c
+step
+.kill Некролордов|n
+.collect 5 Awakening Rod##34083|n
+.' Используйте Жезл пробуждения на спящего врайкула|use Awakening Rod##34083|tip Они спят прямо в стенах, как мумии.
+.kill 5 Dormant Vrykul|q 11432/1
+step
+.talk Mage-Lieutenant Malister##23888
+..turnin Спящие великаны##11432
 step //253
 'Летите в Форт Вилдервар|goto Howling Fjord,60.1,16.0,0.5|noway|c
 step //254
@@ -18743,18 +18761,6 @@ step //304
 goto 29,55.5
 .talk Commander Saia Azuresteel##26459
 ..turnin Письмо домой##12067
-step //305
-goto 28.7,57.1
-.talk Sarendryana##26837
-..accept Усиление древняков##12092
-step //306
-goto 31.2,59.7
-.talk Woodlands Walker##26421
-.collect 3 Bark of the Walkers##36786|q 12092
-step //307
-goto 30.6,63.4
-.' Используйте Кору древня на древа Лоталора|use Bark of the Walkers##36786|tip Неагрессивные древа.
-.' Усилено 3 древа Лоталора|goal 3 Lothalor Ancient strengthened|q 12092/1
 step //308
 goto 32.2,70.6
 .from Lieutenant Ta'zinni##26815|tip Он ходит по кругу вокруг полукруглой фиолетовой светящейся штуки.
@@ -18763,6 +18769,17 @@ step //309
 goto 32.2,71.2
 .' Используйте Амулет управления средоточием силовых линий рядом с средоточием силовых линий|use Ley Line Focus Control Amulet##36779|tip Это большая полукруглая фиолетовая светящаяся штука.
 .' Информация о средоточии силовых линий получена|goal Ley line focus information retrieved|q 12083/1
+step //305
+goto 28.7,57.1
+.talk Sarendryana##26837
+..accept Усиление древняков##12092
+step //306
+goto 31.2,59.7
+.talk Woodlands Walker##26421
+.collect 3 Bark of the Walkers##36786|q 12092
+.' Используйте Кору древня на древа Лоталора|use Bark of the Walkers##36786|tip Неагрессивные древа.
+step
+.' Усилено 3 древа Лоталора|goal 3 Lothalor Ancient strengthened|q 12092/1
 step //310
 goto 28.7,57.1
 .talk Sarendryana##26837
@@ -20904,13 +20921,19 @@ goto 15.5,69.8
 .' Используйте Окованный ботинок Стефана на Насса|use Stefan's Steel Toed Boot##38659
 .' Соберите образцов волос 10 иссохших троллей|goal 10 Hair Samples Collected|q 12630/1
 .get Колье нежизни|n
-.' Нажмите на Колье нежизни в сумке|use Unliving Choker##38673
-..accept Зов тьмы##12633
+.' Нажмите на Колье нежизни в сумке|use Unliving Choker##38660
+..accept Приглашение##12631
+step 
+goto 14.1,73.8
+.talk Stefan Vadu##28518
+..turnin Приглашение##12631
+//..accept Зов тьмы##12633
+..accept Счастливое избавление##12637
 step //65
 goto 14.1,73.8
 .talk Stefan Vadu##28518
 ..turnin Насса надо как следует пнуть##12630
-..turnin Зов тьмы##12633
+//..turnin Зов тьмы##12633
 ..accept На волосок от смерти##12638
 step //66
 goto 14.3,74
