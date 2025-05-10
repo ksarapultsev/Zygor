@@ -4417,7 +4417,7 @@ step //120
 'Летите в Крепость Кенария в Силитусе|goto Silithus,50.4,36.5,3|noway|c
 .talk Baldruc##4321
 step //121
-goto Silithus,49.7,37.5s
+goto Silithus,49.7,37.5
 .talk Geologist Larksbane##15183
 ..accept Сумеречная тайна##8284
 step //122
@@ -4580,6 +4580,15 @@ step //161
 goto 42.7,84
 .talk Commander Ashlam Valorfist##10838
 ..turnin Сторожевые башни##5097
+step
+.'Если сложно можно не выполнять Эти 2 квеста Увы тебе, Андорал и Некроситет 
+..talk Commander Ashlam Valorfist##10838
+..accept Увы тебе, Андорал##211
+step
+goto 44.81,69.52
+.kill Араж Призыватель|q 211 
+.get Осколок оберега Араджа| q 211/1
+step
 ..accept Некроситет##5533
 .talk Alchemist Arbington##11056
 ..turnin Некроситет##5533
@@ -4657,6 +4666,7 @@ goto 42.9,84.5
 .talk Anchorite Truuen##17238
 ..turnin Знак Светоносного##9474
 step //178
+'Вернитесь в Стальгорн|goto Ironforge|use Hearthstone##6948|noway|c
 'Летите в Штормград|goto Stormwind City|noway|c
 step //179
 goto Stormwind City,57.2,48.1
@@ -12382,7 +12392,7 @@ goto 79.3,33.9
 step //32
 goto 78.3,34.5|n
 .talk Gryphoneer Windbellow##20235
-..'Летите в Оплот Чести|goto Hellfire Peninsula,68.7,28.2,1|noway|c
+..'Летите в Паращая застава|goto Hellfire Peninsula,68.7,28.2,1|noway|c
 step //33
 goto 68.3,28.6
 .talk Field Marshal Brock##20793
