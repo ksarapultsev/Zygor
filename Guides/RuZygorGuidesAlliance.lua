@@ -4409,12 +4409,15 @@ goto Ironforge,58.6,47.3
 ..accept Отвоевание Силитуса##8275
 step //118
 'Летите в Гавань Менетилов|goto Wetlands,9.5,59.7,0.1|noway|c
+goto Wetlands,9.5,59.7,0.1
 step //119
 'Плывите на корабле в Терамор|goto Dustwallow Marsh|noway|c
+goto Dustwallow Marsh,67.52,51.31
 step //120
 'Летите в Крепость Кенария в Силитусе|goto Silithus,50.4,36.5,3|noway|c
+.talk Baldruc##4321
 step //121
-goto Silithus,49.7,37.5
+goto Silithus,49.7,37.5s
 .talk Geologist Larksbane##15183
 ..accept Сумеречная тайна##8284
 step //122
