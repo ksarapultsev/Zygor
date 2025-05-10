@@ -3986,7 +3986,7 @@ goto 48.9,29.7
 step //18
 goto 47.5,26.5
 .talk Lord Thorval##28472
-..accept Сила крови, льда и нечестивости##1284912849 |instant
+..accept Сила крови, льда и нечестивости##12849 |instant
 step //19
 goto 51.6,34.5
 .talk Scourge Commander Thalanor##28510
