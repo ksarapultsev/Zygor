@@ -18338,14 +18338,6 @@ step //216
 goto 60.3,18.7
 .talk Christopher Sloan##24056
 ..turnin Та самая рыбка##11410
-step //217
-goto 61.8,17.2
-.talk Lieutenant Maeve##24282
-..accept Загадочные ледяные нимфы##11302
-step //218
-goto 62.3,17.2
-.talk Prospector Belvar##24328
-..accept Книга Рун##11346
 step //219
 goto 62.6,16.8
 .talk Gil Grisert##24139
@@ -18381,6 +18373,14 @@ step //225
 .' Нажмите на Храм Ледяного Клинка|tip Это большой синий светящийся алтарь.
 .kill Твое внутреннее смятение|n
 .get Внутреннее смятение изгнано|q 11322/1
+step //217
+goto 61.8,17.2
+.talk Lieutenant Maeve##24282
+..accept Загадочные ледяные нимфы##11302
+//step //218
+//goto 62.3,17.2
+//.talk Prospector Belvar##24328
+//..accept Книга Рун##11346
 step //226
 'Вернитесь в Крепость Западной Стражи|goto Howling Fjord,30.9,41.5,1|use Hearthstone##6948|noway|c
 step //227
