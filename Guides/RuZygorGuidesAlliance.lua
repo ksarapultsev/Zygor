@@ -12633,7 +12633,7 @@ goto 15.1,55.7
 .get 10 Sha'naar Relic|q 9430/1|tip Выглядят как маленькие синие вазы на земле.
 step //86
 goto 15.6,58.8
-.talk Akoru the Firecaller##20678
+.talk Morod the Windstirrer##20677
 ..accept Наладу##10403
 step //87
 goto 16.3,65.1
