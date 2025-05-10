@@ -4223,11 +4223,11 @@ step //73
 goto 52.9,81.5
 .talk Knight Commander Plaguefist##29053
 ..turnin Мольбы об отмщении##12738
-..accept Приятный сюрприз##1274212742 |only Human
-..accept Приятный сюрприз##1274312743 |only NightElf
-..accept Приятный сюрприз##1274412744 |only Dwarf
-..accept Приятный сюрприз##1274512745 |only Gnome
-..accept Приятный сюрприз##1274612746 |only Draenei
+..accept Приятный сюрприз##12742 |only Human
+..accept Приятный сюрприз##12743 |only NightElf
+..accept Приятный сюрприз##12744 |only Dwarf
+..accept Приятный сюрприз##12745 |only Gnome
+..accept Приятный сюрприз##12746 |only Draenei
 step //74
 goto 54.5,83.4
 .kill Valok the Righteous##29070|q 12746/1
@@ -4251,11 +4251,11 @@ only Dwarf
 step //79
 goto 52.9,81.5
 .talk Knight Commander Plaguefist##29053
-..turnin Приятный сюрприз##1274212742 |only Human
-..turnin Приятный сюрприз##1274312743 |only NightElf
-..turnin Приятный сюрприз##1274412744 |only Dwarf
-..turnin Приятный сюрприз##1274512745 |only Gnome
-..turnin Приятный сюрприз##1274612746 |only Draenei
+..turnin Приятный сюрприз##12742 |only Human
+..turnin Приятный сюрприз##12743 |only NightElf
+..turnin Приятный сюрприз##12744 |only Dwarf
+..turnin Приятный сюрприз##12745 |only Gnome
+..turnin Приятный сюрприз##12746 |only Draenei
 ..accept Возвращение домой##12751
 step //80
 goto 56.3,80.2
@@ -18777,8 +18777,8 @@ step //306
 goto 31.2,59.7
 .talk Woodlands Walker##26421
 .collect 3 Bark of the Walkers##36786|q 12092
-.' Используйте Кору древня на древа Лоталора|use Bark of the Walkers##36786|tip Неагрессивные древа.
 step
+.' Используйте Кору древня на древа Лоталора|use Bark of the Walkers##36786|tip Неагрессивные древа.
 .' Усилено 3 древа Лоталора|goal 3 Lothalor Ancient strengthened|q 12092/1
 step //310
 goto 28.7,57.1
@@ -19306,10 +19306,6 @@ step //57
 .talk Ambo Cash##1293
 ..turnin Паровой сюрприз##12326
 ..accept Унесенные ветром##12455
-step //58
-goto 85.9,51
-.talk Yord "Calamity" Icebeard##27319
-..accept Кирпичик за кирпичиком##12462
 step //59
 'Выходите из склепа 85.1,49.5|goto 85.1,49.5
 .' Нажмите на Ящики снаряжения Стражей Зимы|tip Длинные деревянные ящики.
@@ -19335,6 +19331,10 @@ goto 85.9,50.9
 .talk Ambo Cash##1293
 ..turnin Ты и пушка##12457
 ..accept Жаднобород должен быть найден!##12463
+step //58
+goto 85.9,51
+.talk Yord "Calamity" Icebeard##27319
+..accept Кирпичик за кирпичиком##12462
 step //65
 'Спуститесь к 84.4,51|goto 84.4,51
 .kill Necrolord X'avius##27826|q 12462/2
@@ -23016,8 +23016,7 @@ goto 75.8,63
 .' Используйте Оберег земли Торима на Железного великана из клана Закаленных Бурей|use Thorim's Charm of Earth##41505
 .' Помогите дворфам убить их
 .kill 5 Stormforged Iron Giant|q 12915/2
-.collect Slag Covered Metal##41556 |q 12922 |future |n
-.use Slag Covered Metal##41556
+.collect Slag Covered Metal##41556 |q 12922 |future |n |use Slag Covered Metal##41556
 ..accept Очищающее пламя##12922
 step //181
 goto 75.4,63.5
