@@ -12887,13 +12887,13 @@ goto Zangarmarsh,80.4,64.2
 ..accept Племя Тенетопи##9747
 ///////////////////////////////////
 step //26-1
-goto 78.1,62
+goto 78.40,62.02
 .talk Ysiel Windsinger##17841 
-..accept Страж Хомуут##9778
+..accept Страж-смотритель Хамуут##9778
 step //26-2
 goto 79.1,65.3
 .talk Warden Hamoot##17858
-..turnin Страж Хомуут##9778
+..turnin Страж-смотритель Хамуут##9778
 //////////////////////////////////
 step //26
 goto 79.1,65.3
@@ -13035,10 +13035,6 @@ goto 68.2,49.4
 .talk Anchorite Ahuurn##18003
 ..accept Прибежище Оребор##9776
 ..accept Руины Боха'му##9786
-step //57
-goto 68.6,49.4
-.talk Prospector Conall##18295
-..accept Неоконченное дело##9901
 step //58
 goto 68.6,48.7
 .talk Ruam##18007
@@ -13060,6 +13056,10 @@ goto 71.3,46.9
 step //62
 goto 73.2,41.5
 .kill 10 Marshfang Ripper|q 9791/1
+step //57
+goto 68.6,49.4
+.talk Prospector Conall##18295
+..accept Неоконченное дело##9901
 step //63
 goto 77.2,45.9
 .kill Sporewing|q 9901/1|tip Выглядит как спороскат.
