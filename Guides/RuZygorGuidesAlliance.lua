@@ -13512,7 +13512,7 @@ goto Shattrath City,52.6,20.8
 ..turnin Speak with Rilak the Redeemed##10908
 ..accept Глаза Скеттиса##10847
 step //43
-goto 49.2,20.3
+goto Terokkar Forest,49.2,20.3
 .' Нажмите на Восточный алтарь
 .' Очистите Восточный алтарь|goal Eastern Altar|q 10021/2
 step //44
@@ -14535,10 +14535,10 @@ step //115
 goto 60.2,68.9
 .talk Nickwinkle the Metro-Gnome##21755
 ..accept Ясно как день!##10608
-step //116
-goto 60.5,69
-.talk Toshley##21691
-..accept Спасти преобразователи энергии!##10584
+//step //116
+//goto 60.5,69
+//.talk Toshley##21691
+//..accept Спасти преобразователи энергии!##10584
 step //117
 goto 60.7,69.5|n
 .' Путь к полётчику станции Тошли начинается здесь|goto Blade's Edge Mountains,60.7,69.5,0.3|noway|c
