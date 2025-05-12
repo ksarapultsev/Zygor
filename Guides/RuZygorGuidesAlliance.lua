@@ -14370,18 +14370,23 @@ step //79
 .' Убивайте мобов Вечной Скорби
 .' Используйте Знамя огров Боевого Молота на их трупах|use Warmaul Ogre Banner##25552
 .' Знамя огров Боевого Молота установлено 10 |goal 10 Warmaul Ogre Banner Planted|q 9927/1
+step
 ding 67
 step //80
 goto 73.8,62.6
 .talk Lantresor of the Blade##18261
 ..turnin Безжалостное коварство##9927
-..accept Взаимная вежливость##9931
-..accept Вещественное доказательство##9932
-/step 
+step
+goto 73.8,62.6
+.talk Lantresor of the Blade##18261
 ..accept Военная хитрость##9928
+step
 goto 71.4,79.4
 .' Нажмите на Оружие Вечной Скорби|tip Тонкие, квадратные, деревянные коробки с изображением красного топора.
 .get 10 Kil'sorrow Armaments|q 9928/1
+step 
+..accept Взаимная вежливость##9931
+..accept Вещественное доказательство##9932
 step
 .talk Lantresor of the Blade##18261
 ..turnin Военная хитрость##9928
