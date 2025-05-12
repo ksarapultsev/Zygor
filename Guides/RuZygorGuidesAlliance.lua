@@ -14384,13 +14384,14 @@ step
 goto 71.4,79.4
 .' Нажмите на Оружие Вечной Скорби|tip Тонкие, квадратные, деревянные коробки с изображением красного топора.
 .get 10 Kil'sorrow Armaments|q 9928/1
-step 
-..accept Взаимная вежливость##9931
-..accept Вещественное доказательство##9932
 step
 .talk Lantresor of the Blade##18261
 ..turnin Военная хитрость##9928
-
+step 
+goto 73.8,62.6
+.talk Lantresor of the Blade##18261
+..accept Взаимная вежливость##9931
+..accept Вещественное доказательство##9932
 step //81
 goto 61.8,24.4
 .talk Gordawg##18099
