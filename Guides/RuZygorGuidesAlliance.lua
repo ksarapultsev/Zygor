@@ -13089,7 +13089,7 @@ goto 67.7,48
 step //69
 ding 63
 step //70
-goto 78.3,45.2
+goto 78.3,45.2а
 .kill 12 Withered Giant|q 9783/1
 .kill Высохших болотников|n
 .' Выбейте 6 Усиков болотника для квеста в будущем|collect 6 Bog Lord Tendril##24291|q 9743/1 |future
@@ -13509,6 +13509,7 @@ goto Terokkar Forest,37.6,51.4
 step 
 goto Shattrath City,52.6,20.8
 .talk Rilak the Redeemed##22292
+..turnin Speak with Rilak the Redeemed##10908
 ..accept Глаза Скеттиса##10847
 step //43
 goto 49.2,20.3
