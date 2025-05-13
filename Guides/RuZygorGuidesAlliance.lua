@@ -13089,7 +13089,7 @@ goto 67.7,48
 step //69
 ding 63
 step //70
-goto 78.3,45.2а
+goto 78.3,45.2
 .kill 12 Withered Giant|q 9783/1
 .kill Высохших болотников|n
 .' Выбейте 6 Усиков болотника для квеста в будущем|collect 6 Bog Lord Tendril##24291|q 9743/1 |future
