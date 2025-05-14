@@ -283,7 +283,6 @@ goto 42.1,65.9
 .talk Marshal Dughan##240
 ..turnin Водяная нечисть##40
 ..accept Новые заботы##35
-
 step 
 goto 41.53,65.87
 .talk Corina Steele##54
@@ -15901,7 +15900,7 @@ goto 57.5,69.3
 step //13
 goto 57.5,69.1
 .' Нажмите на Святилище сектантов
-..accept Сектанты среди нас##1079711920 // 11720 is the same quest, but it was 11920 for me... odd.
+..accept Сектанты среди нас##11920 // 11720 is the same quest, but it was 11920 for me... odd.
 step //14
 goto 57.8,69.2
 .talk Captain "Lefty" Lugsail##25298
