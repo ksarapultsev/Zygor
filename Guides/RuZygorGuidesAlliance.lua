@@ -17032,14 +17032,6 @@ goto 42,12.8
 .talk Mrmrglmr##25205
 ..turnin Меня хотят очернить!##11562
 ..accept Грммурглл Мрллглл Глрггл!##11563
-step //261
-goto 42,13.2
-.talk Cleaver Bmurglbrm##25211
-..accept Наваристая похлебка из косатки##11564
-step //262
-goto 40.3,12.4
-.kill Косаток Мерцающей бухты|n
-.get 7 Succulent Orca Blubber|q 11564/1
 step //263
 goto 37.4,9.8
 .from Glrggl##25203
@@ -17049,6 +17041,14 @@ goto 42,12.8
 .talk Mrmrglmr##25205
 ..turnin Грммурглл Мрллглл Глрггл!##11563
 ..accept Запасной комплект##11565
+step //261
+goto 42,13.2
+.talk Cleaver Bmurglbrm##25211
+..accept Наваристая похлебка из косатки##11564
+step //262
+goto 40.3,12.4
+.kill Косаток Мерцающей бухты|n
+.get 7 Succulent Orca Blubber|q 11564/1
 step //265
 goto 42,13.2
 .talk Cleaver Bmurglbrm##25211
