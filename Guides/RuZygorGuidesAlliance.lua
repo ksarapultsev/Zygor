@@ -22359,10 +22359,6 @@ goto 42.1,38.6
 ..turnin Так скоро?##12574
 ..accept Потерянное сокровище Шепота Тумана##12575
 ..accept Тяжелая рука##12576
-step //29
-goto 42.1,28.7
-.talk Colvin Norrington##28771
-..accept Жгучее желание помочь##12683
 step //30
 goto 40.4,26.4
 .kill 8 Frenzyheart Spearbearer|q 12576/1
@@ -22387,10 +22383,6 @@ goto 42.1,38.6
 ..turnin Потерянное сокровище Шепота Тумана##12575
 ..turnin Тяжелая рука##12576
 ..accept Пора домой!##12577
-step //35
-goto 42.1,28.7
-.talk Colvin Norrington##28771
-..turnin Жгучее желание помочь##12683
 step //36
 'Вернитесь в Лагерь Эрнестуэя|goto Sholazar Basin,26.8,59.2,0.5|use Hearthstone##6948|noway|c
 step //37
@@ -22418,6 +22410,10 @@ goto 42.3,28.7
 .talk Dorian Drakestalker##28376
 ..turnin Время точить когти##12603
 ..turnin Подготовка ловушки##12605
+step //29
+goto 42.1,28.7
+.talk Colvin Norrington##28771
+..accept Жгучее желание помочь##12683
 step //42
 goto 42.1,28.7
 .talk Colvin Norrington##28771
@@ -22451,6 +22447,10 @@ step //48
 goto 42.1,28.9
 .talk Zootfizzle##28374
 ..turnin Моя ручная птица Рух##12658
+step //35
+goto 42.1,28.7
+.talk Colvin Norrington##28771
+..turnin Жгучее желание помочь##12683
 step //49
 goto 54.6,56.3
 .talk High-Oracle Soo-say##28027
