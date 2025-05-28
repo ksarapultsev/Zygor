@@ -3005,32 +3005,32 @@ goto 80.1,48.8
 step //9
 goto 79.6,48.8
 .talk Valaatu##16500
-..accept Наставник магов##92909290|instant
+..accept Наставник магов##9290|instant
 only Draenei Mage
 step //10
 goto 79.6,49.4
 .talk Kore##16503
-..accept Наставник воинов##92899289|instant
+..accept Наставник воинов##9289|instant
 only Draenei Warrior
 step //11
 goto 79.3,49.1
 .talk Firmanvaar##17089
-..accept Обучение шамана##94219421|instant
+..accept Обучение шамана##9421|instant
 only Draenei Shaman
 step //12
 goto 80.1,48.8
 .talk Zalduun##16502
-..accept Наставник жрецов##92919291|instant
+..accept Наставник жрецов##9291|instant
 only Draenei Priest
 step //13
 goto 79.7,48.2
 .talk Aurelon##16501
-..accept Наставник паладинов##92879287|instant
+..accept Наставник паладинов##9287|instant
 only Draenei Paladin
 step //14
 goto 79.9,49.7
 .talk Keilnei##16499
-..accept Наставник охотников##92889288|instant
+..accept Наставник охотников##9288|instant
 only Draenei Hunter
 step //16
 goto 80.3,42.4
