@@ -3032,12 +3032,6 @@ goto 79.9,49.7
 .talk Keilnei##16499
 ..accept Наставник охотников##92889288|instant
 only Draenei Hunter
-step //15
-goto 79.5,51.4
-.talk Technician Zhanaa##17071
-..accept Запасные части##9305
-.talk Vindicator Aldar##16535
-..accept Прививка##9303
 step //16
 goto 80.3,42.4
 .' Используйте рассовую способность Дар наару на "Выживший дреней"|cast Gift of the Naaru
@@ -3112,6 +3106,12 @@ goto 79.3,49.1
 .talk Firmanvaar##17089
 ..turnin Зов Земли##9451
 only Draenei Shaman
+tep //15
+goto 79.5,51.4
+.talk Technician Zhanaa##17071
+..accept Запасные части##9305
+.talk Vindicator Aldar##16535
+..accept Прививка##9303
 step //33
 goto 79.5,51.4
 .talk Technician Zhanaa##17071
@@ -22645,7 +22645,7 @@ step //94
 goto 40.9,85.3
 .talk Ricket##29428
 ..accept Пополнение запасов провизии##12827
-..accept Выражение благодарности##12836
+//..accept Выражение благодарности##12836
 step //95
 goto 40.8,84.5
 .talk Skizzle Slickslide##29721
@@ -22671,7 +22671,7 @@ step //100
 goto 40.9,85.3
 .talk Ricket##29428
 ..turnin Пополнение запасов провизии##12827
-..turnin Выражение благодарности##12836
+//..turnin Выражение благодарности##12836
 ..accept Полет вдохновения##12828
 step //101
 goto 35.1,87.8
