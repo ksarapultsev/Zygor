@@ -3106,7 +3106,7 @@ goto 79.3,49.1
 .talk Firmanvaar##17089
 ..turnin Зов Земли##9451
 only Draenei Shaman
-tep //15
+step //15
 goto 79.5,51.4
 .talk Technician Zhanaa##17071
 ..accept Запасные части##9305
