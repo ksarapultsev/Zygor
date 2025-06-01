@@ -8196,7 +8196,7 @@ goto Stormwind City,50.6,87.6|n
 ..accept Просьба Малина##690
 step //105
 'Летите в Опорный пункт|goto Arathi Highlands,45.8,46.1,0.5|noway|c
-/step
+step
 goto Arathi Highlands,46.6,47.0
 .talk Skuerto##2789
 ..turnin Просьба Малина##690
