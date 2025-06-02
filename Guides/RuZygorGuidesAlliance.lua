@@ -8213,8 +8213,18 @@ step //104
 goto 48.1,59.1
 .talk Magistrate Henry Maleb##2276
 ..turnin Благородные смерти##512
+step
+'Летите в Штормград|goto Stormwind City|noway|c
+step //88
+goto Stormwind City,50.6,87.6|n
+.talk Archmage Malin##2708
+..accept Просьба Малина##690
 step //105
 'Летите в Опорный пункт|goto Arathi Highlands,45.8,46.1,0.5|noway|c
+step
+goto Arathi Highlands,46.6,47.0
+.talk Skuerto##2789
+..turnin Просьба Малина##690
 step //106
 goto Arathi Highlands,46.2,47.8
 .talk Apprentice Kryten##2788
@@ -8231,7 +8241,7 @@ goto 82.8,36
 .kill Кобольдов|n
 .get 12 Mote of Myzrael|q 642/1
 step //110
-goto 84.3,30.9|tip В пещере идите в проход, идущий влево.
+goto 85.51,30.16|tip В пещере идите в проход, идущий влево.
 .' Нажмите на Радужные осколки|tip Это большой черный парящий кристалл.
 ..turnin Пойманная принцесса##642
 ..accept Связывающие камни##651

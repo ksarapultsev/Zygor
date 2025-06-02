@@ -4,6 +4,7 @@ if not ZGV then return end
 -- [followup]=prereq
 
 ZGV.Chains = {
+[691]=690,
 [10002]=9998,
 [10003]=10000,
 [10005]=10446,
