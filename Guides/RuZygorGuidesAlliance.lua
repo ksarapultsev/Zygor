@@ -3345,11 +3345,13 @@ goto 47,70.2
 .talk Priestess Kyleen Il'dinare##17241
 ..turnin Возвращение руин##9513
 ..turnin Руническая табличка##9514
-..accept Полководец Шрисс'тиз##9515
 step //79
 goto 47.2,70
 .talk Archaeologist Adamant Ironheart##17242
 ..turnin Хрупкие предметы. Не кантовать!##9523
+step
+.talk Priestess Kyleen Il'dinare##17241
+..accept Полководец Шрисс'тиз##9515
 step //80
 goto 48.2,72.5
 .from Engineer "Spark" Overgrind##17243
