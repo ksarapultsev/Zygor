@@ -2974,24 +2974,12 @@ goto 80.4,45.9
 .talk Proenitus##16477
 ..turnin Тебе удалось выжить!##9279
 ..accept Исцеляющие кристаллы##9280
-step //3
-goto 79.1,46.5
-.talk Botanist Taerix##16514
-..accept Неустойчивые мутации##10302
 step //4
-goto 78.6,45.4
-.kill 8 Volatile Mutation|q 10302/1
 .from Vale Moth##16520+
 .get 8 Vial of Moth Blood|q 9280/1
 step //5
 ding 2
-step //6
-goto 79.1,46.5
-.talk Botanist Taerix##16514
-..turnin Неустойчивые мутации##10302
-..accept То, что должно быть сделано…##9293
-.talk Apprentice Vishael##20233
-..accept Сбор трав##9799
+
 step //7
 goto 80.4,45.9
 .talk Proenitus##16477
@@ -3032,10 +3020,34 @@ goto 79.9,49.7
 .talk Keilnei##16499
 ..accept Наставник охотников##9288|instant
 only Draenei Hunter
+step
+goto 80.4,45.8
+.talk Proenitus##16477
+..accept Ботаник Таэрикс##9371
+step 
+goto 79.2,46.4
+.talk Botanist Taerix##16514
+..turnin Ботаник Таэрикс##9371
+step //3
+goto 79.1,46.5
+.talk Botanist Taerix##16514
+..accept Неустойчивые мутации##10302
 step //16
 goto 80.3,42.4
 .' Используйте рассовую способность Дар наару на "Выживший дреней"|cast Gift of the Naaru
 .' Спасите Выживших дренеев|goal Draenei Survivors Saved|q 9283/1
+step
+goto 78.6,45.4
+.kill 8 Volatile Mutation|q 10302/1
+step
+goto 79.1,46.5
+.talk Botanist Taerix##16514
+..turnin Неустойчивые мутации##10302
+..accept То, что должно быть сделано…##9293
+step //6
+goto 79.1,46.5
+.talk Apprentice Vishael##20233
+..accept Сбор трав##9799
 step //17
 goto 80.1,48.8
 .talk Zalduun##16502
@@ -3053,12 +3065,27 @@ goto 79.1,46.5
 .talk Botanist Taerix##16514
 ..turnin То, что должно быть сделано…##9293
 ..accept Исцеление озера##9294
+step
 .talk Apprentice Vishael##20233
 ..turnin Сбор трав##9799
 step //21
 goto 77.3,58.7
 .' Нажмите на Радиоактивный кристалл силы|tip Это огромный фиолетовый кристалл в озере.
 .' Рассейте Нейтрализующее вещество|goal Disperse the Neutralizing Agent|q 9294/1
+step //25
+goto 79.1,46.5
+.talk Botanist Taerix##16514
+..turnin Исцеление озера##9294
+..accept Vindicator Aldar##10304
+step
+goto 79.5,51.4
+.talk Vindicator Aldar##16535
+..turnin Vindicator Aldar##10304
+..accept Прививка##9303
+step
+goto 79.5,51.4
+.talk Technician Zhanaa##17071
+..accept Запасные части##9305
 step //22
 goto 78.4,60.4
 .' Используйте Прививочный кристалл на Совун с Совиных холмов|use Inoculating Crystal##22962
@@ -3070,10 +3097,6 @@ goto 84.7,65.6
 .get 4 Emitter Spare Part|q 9305/1
 step //24
 'Вернитесь в Долину Аммен|goto Azuremyst Isle,84.3,43.0,0.5|use Hearthstone##6948|noway|c
-step //25
-goto 79.1,46.5
-.talk Botanist Taerix##16514
-..turnin Исцеление озера##9294
 step //26
 ding 4
 step //27
@@ -3081,6 +3104,7 @@ goto 79.3,49.1
 .talk Firmanvaar##17089
 ..accept Зов Земли##9449
 only Draenei Shaman
+step
 step //28
 goto 74.0,42.0|n
 .' Дорога к Духу Долины начинается здесь|goto Azuremyst Isle,74.0,42.0,0.5|noway|c
@@ -3106,12 +3130,6 @@ goto 79.3,49.1
 .talk Firmanvaar##17089
 ..turnin Зов Земли##9451
 only Draenei Shaman
-step //15
-goto 79.5,51.4
-.talk Technician Zhanaa##17071
-..accept Запасные части##9305
-.talk Vindicator Aldar##16535
-..accept Прививка##9303
 step //33
 goto 79.5,51.4
 .talk Technician Zhanaa##17071
@@ -3144,6 +3162,8 @@ goto 79.5,51.4
 ..turnin Шпион эльфов крови##9311
 ..turnin Планы эльфов крови##9798
 ..accept Излучатель##9312
+step
+goto 79.5,51.4
 .talk Technician Zhanaa##17071
 ..turnin Излучатель##9312
 ..accept На Лазурную заставу##9313
@@ -3187,6 +3207,10 @@ goto 48.3,49.2
 ..turnin Вести с Лазурной заставы##9314
 step //49
 home Лазурную заставу
+step 
+goto 48.4,51.6
+.talk Daedal##17215
+..accept Пророчество Велена##9505
 step //50
 goto 50.3,56.6
 .from Moongraze Stag##17200+
@@ -3198,6 +3222,7 @@ ding 6
 step //52
 goto 47,70.2
 .talk Admiral Odesyus##17240
+..turnin Пророчество Велена##9505
 ..accept Начало положено##9506
 step //53
 goto 46.7,70.5
@@ -3215,10 +3240,6 @@ step //56
 goto 47,70.2
 .talk Priestess Kyleen Il'dinare##17241
 ..accept Возвращение руин##9513
-step //57
-goto 47.2,70
-.talk Archaeologist Adamant Ironheart##17242
-..accept Хрупкие предметы. Не кантовать!##9523
 step //58
 goto 58.6,66.4
 .' Нажмите на Морскую карту на ящике под зеленым навесом
@@ -3232,6 +3253,10 @@ goto 47,70.2
 .talk Admiral Odesyus##17240
 ..turnin Начало положено##9506
 ..accept Созревший план##9530
+step //57
+goto 47.2,70
+.talk Archaeologist Adamant Ironheart##17242
+..accept Хрупкие предметы. Не кантовать!##9523
 step //61
 ding 7
 step //62
