@@ -3625,6 +3625,19 @@ step //136
 goto 46.7,20.6
 .talk High Chief Stillpine##17440
 ..accept Поиски в Логове племени Тихвой##9565
+step
+goto 44.8,23.8
+.talk Moordo##17442
+..accept Звери Судного дня!##9560
+step
+goto 56.2,21.2
+//.kill 8 Ravager Specimen##17199
+//.from Ravager Specimen##17199+
+.get 8 Remains of Cowlen's Family|q 9560/1
+step
+goto 44.8,23.8
+.talk Moordo##17442
+..turnin Звери Судного дня!##9560
 step //137
 goto 46.9,21.2
 .talk Stillpine the Younger##17445
