@@ -283,8 +283,13 @@ goto 42.1,65.9
 .talk Marshal Dughan##240
 ..turnin Водяная нечисть##40
 ..accept Новые заботы##35
-only Human Warrior // Гладий
 step 
+only Human Warrior // Гладий
+goto 41.53,65.87
+.talk Corina Steele##54
+buy Gladius##2488 
+step 
+only Human Paladin // Гладий
 goto 41.53,65.87
 .talk Corina Steele##54
 buy Gladius##2488 
