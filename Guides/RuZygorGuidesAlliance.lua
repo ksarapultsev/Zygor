@@ -283,7 +283,7 @@ goto 42.1,65.9
 .talk Marshal Dughan##240
 ..turnin Водяная нечисть##40
 ..accept Новые заботы##35
-only Human Warrior Paladin // Гладий
+only Human Warrior // Гладий
 step 
 goto 41.53,65.87
 .talk Corina Steele##54
