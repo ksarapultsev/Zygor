@@ -284,15 +284,10 @@ goto 42.1,65.9
 ..turnin Водяная нечисть##40
 ..accept Новые заботы##35
 step 
-only Human Warrior // Гладий
 goto 41.53,65.87
 .talk Corina Steele##54
 buy Gladius##2488 
-step 
-only Human Paladin // Гладий
-goto 41.53,65.87
-.talk Corina Steele##54
-buy Gladius##2488 
+
 step //65
 goto 43.3,65.7
 .talk William Pestle##253
@@ -2253,7 +2248,7 @@ step //148
 step //149
 goto Elwynn Forest,42.1,65.9
 .talk Marshal Dughan##240
-..accept Доклад Гриану Камнегриву##109
+..accept Доклад Гриану Камнегриву##109  
 step //150
 'Идите на юго-запад в Западный Край|goto Westfall|noway|c
 ]])
@@ -5686,7 +5681,7 @@ only Gnome Warlock,Human Warlock
 step //7
 goto Ironforge,47.6,9.3
 .talk Lago Blackwrench##6120
-..accept Приглашение Гакина##17171717 |noobsolete
+..accept Приглашение Гакина##1717 |noobsolete
 only Gnome Warlock,Human Warlock
 step //8
 'Поезжайте на метро в Штормград|goto Stormwind City|noway|c
@@ -5695,7 +5690,7 @@ step //9
 goto Stormwind City,39.6,84.6
 .talk Gakin the Darkbinder##6122
 ..turnin Приглашение Гакина##1717
-..accept Пожиратель Душ##17161716 |noobsolete
+..accept Пожиратель Душ##1716 |noobsolete
 only Gnome Warlock,Human Warlock
 step //10
 goto 22.6,56.1|n
