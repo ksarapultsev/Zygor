@@ -287,7 +287,7 @@ step
 goto 41.53,65.87
 .talk Corina Steele##54
 buy Gladius##2488 
-
+// qerror
 step //65
 goto 43.3,65.7
 .talk William Pestle##253
