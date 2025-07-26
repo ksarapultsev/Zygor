@@ -284,7 +284,7 @@ goto 42.1,65.9
 ..turnin Водяная нечисть##40
 ..accept Новые заботы##35
 step 
-//only Human Warrior,Human Paladin    // Гладий
+only Human Warrior,Human Paladin    // Гладий
 goto 41.53,65.87
 .talk Corina Steele##54
 buy Gladius##2488
