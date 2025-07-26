@@ -4,7 +4,7 @@ if not ZGV then return end
 -- [followup]=prereq
 
 ZGV.Chains = {
-..accept Find Bingles##2039
+[1302]=1301,
 [2039]=2038,
 [691]=690,
 [10002]=9998,

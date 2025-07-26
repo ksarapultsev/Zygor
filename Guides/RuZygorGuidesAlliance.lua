@@ -7350,14 +7350,16 @@ step //84
 'Летите в Аубердин|goto Darkshore,36.4,45.6,0.5|noway|c
 step //85
 'Плывите на корабле в Штормград|goto Stormwind City|noway|c
+//step 
 goto 51.0,95.6
 .talk Connor Rivers##5081
-..turnin Джеймс Хьяль##1301
+..accept Джеймс Хьяль##1301
 step //86
 'Летите в Гавань Менетилов|goto Wetlands,9.5,59.7,0.5|noway|c
 step //87
 goto Wetlands,8.4,61.8
 .talk Vincent Hyal##5082
+..turnin Джеймс Хьяль##1301
 ..accept Джеймс Хьяль##1302
 step //88
 goto 10.9,59.6
