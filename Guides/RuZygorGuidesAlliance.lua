@@ -284,7 +284,7 @@ goto 42.1,65.9
 ..turnin Водяная нечисть##40
 ..accept Новые заботы##35
 step 
-only Human Warrior,Paladin    // Гладий
+only Human Warrior,Human Paladin    // Гладий
 goto 41.53,65.87
 .talk Corina Steele##54
 buy Gladius##2488
@@ -7350,7 +7350,7 @@ step //84
 'Летите в Аубердин|goto Darkshore,36.4,45.6,0.5|noway|c
 step //85
 'Плывите на корабле в Штормград|goto Stormwind City|noway|c
-//step 
+step 
 goto 51.0,95.6
 .talk Connor Rivers##5081
 ..accept Джеймс Хьяль##1301
