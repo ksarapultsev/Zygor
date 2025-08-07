@@ -13110,6 +13110,15 @@ goto 71.3,46.9
 step //62
 goto 73.2,41.5
 .kill 10 Marshfang Ripper|q 9791/1
+step
+goto 68.6,48.7
+.talk Ruam##18007
+..turnin Споры гриба-блескуна##9777
+step
+goto 67.7,48
+.talk Noraani##18006
+..turnin Опасные болотные клыки##9791
+..accept Филе угрей из озера Тенетопь##9780
 step //57
 goto 68.6,49.4
 .talk Prospector Conall##18295
@@ -13131,15 +13140,6 @@ goto 68.6,49.4
 .talk Prospector Conall##18295
 ..turnin Неоконченное дело##9901
 ..accept Проклятие черной бракониды##9896
-step //67
-goto 68.6,48.7
-.talk Ruam##18007
-..turnin Споры гриба-блескуна##9777
-step //68
-goto 67.7,48
-.talk Noraani##18006
-..turnin Опасные болотные клыки##9791
-..accept Филе угрей из озера Тенетопь##9780
 step //69
 ding 63
 step //70
