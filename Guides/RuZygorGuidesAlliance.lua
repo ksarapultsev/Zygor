@@ -21949,6 +21949,11 @@ step //274
 goto 59.5,58.1
 .talk Witch Doctor Khufu##28479
 ..turnin Буйство##12721
+step //282
+goto 39.7,58.7
+.talk Monte Muzzleshot##27987
+..turnin Куда запропастился Хеминг Эрнестуэй?##12521
+..accept Добро пожаловать в Низину Шолазар##12489
 step //275
 'Летите на Взлётную Полосу Выкрутеня|goto Borean Tundra,56.5,20.1,0.1|noway|c
 step //276
@@ -21971,11 +21976,11 @@ step //281
 goto 38.7,56.7
 .' Нажмите на Двигатель ветролета|tip Лежит на земле рядом с разбившимся самолетом.
 .get Flying Machine Engine|q 12522/1
-step //282
-goto 39.7,58.7
-.talk Monte Muzzleshot##27987
-..turnin Куда запропастился Хеминг Эрнестуэй?##12521
-..accept Добро пожаловать в Низину Шолазар##12489
+step
+goto 25.4,58.5
+.talk Weslex Quickwrench##28033
+..turnin Нужен двигатель – найдем двигатель!##12522
+..accept Есть детали? – Тащи сюда!##12523
 step //283
 goto 35.5,47.4
 .talk Engineering Helice##28787
@@ -21985,6 +21990,8 @@ step //284
 goto 37.4,46.1
 .'Убейте 15 членов Торговой Компании|goal 15 Venture Company members killed|q 12524/1
 .kill мобов Торговой Компании|n
+.' Нажмите на Запчасти Торговой Компании|tip Металлические детали на земле.
+.get 7 Venture Co. Spare Parts|q 12523/1
 .get Golden Engagement Ring|q 12624/1
 step //285
 goto 27.2,59.9
@@ -22000,15 +22007,6 @@ goto 27.1,58.6
 .talk Hemet Nesingwary##27986
 ..turnin Добро пожаловать в Низину Шолазар##12489
 ..turnin Проектирование аварии##12688
-step //288
-goto 25.4,58.5
-.talk Weslex Quickwrench##28033
-..turnin Нужен двигатель – найдем двигатель!##12522
-..accept Есть детали? – Тащи сюда!##12523
-step //289
-goto 32.7,46.9
-.' Нажмите на Запчасти Торговой Компании|tip Металлические детали на земле.
-.get 7 Venture Co. Spare Parts|q 12523/1
 step //290
 goto 35.8,50.3
 .kill 1 Meatpie|q 12525/2|tip Синий огр, ходит вверх и вниз платформе.
