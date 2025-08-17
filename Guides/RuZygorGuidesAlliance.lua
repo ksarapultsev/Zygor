@@ -18730,6 +18730,14 @@ step //280
 'Идите на северо-восток в Драконий Погост|goto Dragonblight|noway|c
 // Тут нужно добавить квест
 step //281
+goto Dragonblight,48.0,74.8
+.talk Emissary Skyhaven##26440
+..accept Безотлагательное путешествие в Покой Звезд##11995
+step
+goto 29.0,55.4
+.talk Image of Archmage Modera##26673
+..turnin Безотлагательное путешествие в Покой Звезд##11995
+step //281
 goto Dragonblight,29,55.5
 .talk Image of Archmage Modera##26673
 ..accept Обшарить трупы##12000
