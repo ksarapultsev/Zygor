@@ -18858,6 +18858,11 @@ step //309
 goto 32.2,71.2
 .' Используйте Амулет управления средоточием силовых линий рядом с средоточием силовых линий|use Ley Line Focus Control Amulet##36779|tip Это большая полукруглая фиолетовая светящаяся штука.
 .' Информация о средоточии силовых линий получена|goal Ley line focus information retrieved|q 12083/1
+step //
+goto 29,55.5
+.talk Image of Archmage Modera##26673
+..turnin В лесах##12083
+..accept Поиски в деревне Инду'ле##12098
 step //305
 goto 28.7,57.1
 .talk Sarendryana##26837
@@ -18873,11 +18878,6 @@ step //310
 goto 28.7,57.1
 .talk Sarendryana##26837
 ..turnin Усиление древняков##12092
-step //311
-goto 29,55.5
-.talk Image of Archmage Modera##26673
-..turnin В лесах##12083
-..accept Поиски в деревне Инду'ле##12098
 step //312
 goto 26.4,45.7
 .from Anub'ar Cultist##26319
