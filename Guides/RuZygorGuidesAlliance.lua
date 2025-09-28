@@ -5410,6 +5410,7 @@ goto 83.5,65.5
 step //142
 goto 63.6,47.9
 .talk Bingles Blastenheimer##6577
+..turnin Find Bingles##2039
 ..accept Пропавшее снаряжение Бинглза##2038
 step //143
 goto 55.2,54
