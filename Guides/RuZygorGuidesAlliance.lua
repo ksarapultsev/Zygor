@@ -9174,9 +9174,6 @@ goto 25.9,44.6
 ..turnin Охлаждение горячих голов##713
 ..accept Гиро...чего?##714
 ..turnin Гиро...чего?##714
-.talk Lucien Tosselwrench##2920
-..accept Жидкий камень##715
-..turnin Жидкий камень##715
 step //128
 goto 21.9,44.6
 .kill Младших каменных элементалей|n
@@ -9258,6 +9255,9 @@ goto 25.9,44.6
 .get Оковы стихий Лотвиля|n
 .talk Lotwil Veriatus##2921
 ..turnin Сложная задача##778
+.talk Lucien Tosselwrench##2920
+..accept Жидкий камень##715
+..turnin Жидкий камень##715
 step //144
 goto 42.2,52.7
 .talk Martek the Exiled##4618
